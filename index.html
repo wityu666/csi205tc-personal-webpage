@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Qichen Yu's student portfolio for networking and distributed computing.">
+  <meta name="color-scheme" content="light dark">
+  <title>Qichen.Yu | Networking and Distributed Computing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="name" href="#main">Qichen.Yu</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#learning">Learning</a><a href="#network">Network</a></nav></header>
+  <main id="main">
+    <section class="intro" aria-labelledby="title"><div><h1 id="title">Exploring how<br>computers connect.</h1><p>A student portfolio for CSI205TC Networking and Distributed Computing.</p><a class="button" href="#learning">Explore my learning</a></div><div class="network-art" aria-hidden="true"><span class="node n1">Client</span><span class="connection"></span><span class="node n2">Server</span><span class="packet p1"></span><span class="packet p2"></span><span class="caption">REQUEST → RESPONSE</span></div></section>
+    <section id="about"><h2>About me</h2><p>I'm Qichen.Yu. This page introduces my coursework interests in network communication and distributed data processing. It is a static website with HTML, CSS and JavaScript, designed for GitHub Pages.</p></section>
+    <section id="learning"><h2>What I'm studying</h2><div class="topics"><article><span>01</span><h3>Network communication</h3><p>Socket programming, TCP and UDP video streaming, and the behaviour of packets in transit.</p></article><article><span>02</span><h3>Distributed processing</h3><p>The MapReduce model and word counting using Python, Hadoop and Apache Spark.</p></article><article><span>03</span><h3>Machine learning</h3><p>Preparing features, training models and evaluating predictions with Spark MLlib.</p></article></div></section>
+    <section id="network"><h2>How this page reaches you</h2><p>A hostname is resolved using DNS. Your browser connects to the hosting service and requests the page over HTTPS. The tests in the coursework report measure the actual environment; this diagram describes the usual TCP based connection.</p><ol class="steps"><li>DNS lookup</li><li>TCP connection</li><li>TLS handshake</li><li>HTTP request and response</li></ol><button id="details-toggle" type="button" aria-expanded="false" aria-controls="details">Show protocol details</button><div id="details" hidden><p>DNS resolves names to addresses. TCP provides a reliable byte stream. TLS encrypts the HTTP exchange. An HTTPS packet capture normally exposes connection and TLS metadata, while the page content remains encrypted.</p><p>Browsers may reuse cached DNS records and established connections. HTTP/3, when negotiated, uses QUIC over UDP; the protocol actually observed must be checked in the capture.</p></div></section>
+  </main>
+  <footer><p>Qichen.Yu · CSI205TC</p><a href="https://github.com/wityu666/csi205tc-personal-webpage" rel="noopener noreferrer">View website source on GitHub</a></footer>
+</body>
+</html>
